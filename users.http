@@ -1,4 +1,4 @@
-! Criar um novo usuário
+// Criar um novo usuário
 POST http://localhost:5000/api/users
 Content-Type: application/json
 
@@ -13,13 +13,13 @@ Content-Type: application/json
     }
 ]
 
-! Listar todos os usuários
+// Listar todos os usuários
 GET http://localhost:5000/api/users
 
-! Buscar um usuário específico pelo ID
+// Buscar um usuário específico pelo ID
 GET http://localhost:5000/api/users/1
 
-! Atualizar um usuário específico
+// Atualizar um usuário específico
 PUT http://localhost:5000/api/users/1
 Content-Type: application/json
 
@@ -28,5 +28,5 @@ Content-Type: application/json
     "email": "carlos.silvaa@gmail.com"
 }
 
-! Deletar um usuário específico
+// Deletar um usuário específico
 DELETE http://localhost:5000/api/users/1
