@@ -1,0 +1,32 @@
+### Criar um novo usuário
+POST http://localhost:5000/api/users
+Content-Type: application/json
+
+[
+    {
+        "name": "Carlos Eduardo",
+        "email": "carlos.edu14@gmail.com"
+    },
+    {
+        "name": "João Silva",
+        "email": "joao.silva@gmail.com"
+    }
+]
+
+### Listar todos os usuários
+GET http://localhost:5000/api/users
+
+### Buscar um usuário específico pelo ID
+GET http://localhost:5000/api/users/1
+
+### Atualizar um usuário específico
+PUT http://localhost:5000/api/users/1
+Content-Type: application/json
+
+{
+    "name": "Carlos Silva",
+    "email": "carlos.silvaa@gmail.com"
+}
+
+### Deletar um usuário específico
+DELETE http://localhost:5000/api/users/1
